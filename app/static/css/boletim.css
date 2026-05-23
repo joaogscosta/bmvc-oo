@@ -1,0 +1,96 @@
+/* Configurações Gerais do Corpo da Página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo dos Títulos Principais */
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* Estilo das Listas (Alunos, Aprovados, Reprovados) */
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    max-width: 450px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+li {
+    padding: 15px 20px;
+    border-bottom: 1px solid #edf2f7;
+    font-size: 16px;
+    transition: background-color 0.2s;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+li:hover {
+    background-color: #f8fafc;
+}
+
+/* Estilo da Tabela de Notas */
+table {
+    width: 100%;
+    max-width: 700px;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+th {
+    background-color: #34495e;
+    color: white;
+    text-align: left;
+    padding: 12px 15px;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #edf2f7;
+    font-size: 15px;
+}
+
+tr:hover {
+    background-color: #f1f5f9;
+}
+
+/* Estilização do Link de Voltar (Botão) */
+.btn-voltar {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #7f8c8d;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.btn-voltar:hover {
+    background-color: #95a5a6;
+}
