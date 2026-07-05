@@ -35,3 +35,12 @@ document.addEventListener("DOMContentLoaded", function() {
         }, 2000);
     }
 });
+
+function confirmarDelecao(event, nomeAluno) {
+    const confirmacao = confirm(`Tem certeza que deseja remover o(a) aluno(a) ${nomeAluno}?`);
+    if (!confirmacao) {
+        event.preventDefault(); // Intercepta e cancela a rota do Bottle se clicar em Cancelar
+        return false;
+    }
+    return true;
+}

@@ -8,9 +8,8 @@
 <body>
     <h1 style="color: green;">🎉 Alunos Aprovados (Média &ge; 6.0)</h1>
     <ul>
-        <!-- O Bottle vai ler a lista 'aprovados' que enviamos pelo controlador -->
-        % for nome in aprovados:
-            <li><strong>{{nome}}</strong> - Parabéns!</li>
+        % for aluno in aprovados:
+            <li><strong>{{aluno.nome}}</strong> - Parabéns!</li>
         % end
     </ul>
     <br>

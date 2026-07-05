@@ -94,3 +94,124 @@ tr:hover {
 .btn-voltar:hover {
     background-color: #95a5a6;
 }
+
+/* ==========================================================================
+   ELEMENTOS DO CRUD (CADASTRO E EDIÇÃO DE ALUNOS)
+   ========================================================================== */
+
+/* Container dos Formulários (Tanto o de criar na home quanto o de editar) */
+.form-container {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    width: 100%;
+    max-width: 450px; /* Alinhado com o tamanho máximo da sua lista (ul) */
+    margin-bottom: 25px;
+    box-sizing: border-box;
+}
+
+.form-container h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #2c3e50; /* Mesma cor do seu h1 */
+    font-size: 18px;
+    border-bottom: 2px solid #f1f5f9;
+    padding-bottom: 8px;
+}
+
+/* Espaçamento e Labels dos Inputs */
+.form-container p {
+    margin-bottom: 15px;
+}
+
+.form-container label {
+    font-weight: bold;
+    color: #4a5568;
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+/* Estilização dos Inputs de Texto e Número */
+.form-container input[type="text"],
+.form-container input[type="number"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    font-size: 15px;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+/* Foco azul escuro combinando com a sua tabela */
+.form-container input:focus {
+    border-color: #34495e;
+    outline: none;
+}
+
+/* Organização dos Botões */
+.form-actions {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Botão de Salvar / Cadastrar */
+.btn-save {
+    background-color: #27ae60; /* Verde escuro elegante */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-save:hover {
+    background-color: #2ecc71;
+}
+
+/* Botão / Link de Cancelar */
+.btn-cancel {
+    color: #c0392b; /* Vermelho escuro elegante */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.btn-cancel:hover {
+    color: #e74c3c;
+    text-decoration: underline;
+}
+
+/* Links de Ações dentro da Tabela (Editar / Deletar) */
+.action-links a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: 12px;
+}
+
+.action-edit {
+    color: #2980b9; /* Azul para editar */
+}
+
+.action-edit:hover {
+    color: #3498db;
+    text-decoration: underline;
+}
+
+.action-delete {
+    color: #c0392b; /* Vermelho para deletar */
+}
+
+.action-delete:hover {
+    color: #e74c3c;
+    text-decoration: underline;
+}

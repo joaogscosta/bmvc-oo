@@ -7,30 +7,53 @@
 </head>
 <body>
     <h1>Boletim de Notas</h1>
-    <table border="1" cellpadding="5" cellspacing="0">
+
+    <div class="form-container">
+        <h3>Cadastrar Novo Aluno</h3>
+        <form action="/cadastrar" method="POST">
+            <p>
+                <input type="text" name="nome" placeholder="Nome do Aluno" required>
+            </p>
+            <p>
+                <input type="number" step="0.1" name="nota1" placeholder="Nota 1" min="0" max="10" required>
+            </p>
+            <p>
+                <input type="number" step="0.1" name="nota2" placeholder="Nota 2" min="0" max="10" required>
+            </p>
+            <div class="form-actions" style="justify-content: flex-end;">
+                <button type="submit" class="btn-save">Adicionar Aluno</button>
+            </div>
+        </form>
+    </div>
+
+    <table>
         <thead>
             <tr>
                 <th>Aluno</th>
                 <th>Nota 1</th>
                 <th>Nota 2</th>
                 <th>Média</th>
+                <th>Ações</th>
             </tr>
         </thead>
         <tbody>
-            <!-- Varre a lista de objetos Aluno -->
             % for aluno in lista_alunos:
                 <tr>
-                    <!-- Acessa as propriedades do objeto diretamente -->
                     <td>{{aluno.nome}}</td>
                     <td>{{aluno.nota1}}</td>
                     <td>{{aluno.nota2}}</td>
-                    <!-- Chama o método calcular_media() que você criou na classe! -->
                     <td>{{aluno.calcular_media()}}</td>
+                    <td class="action-links">
+                        <a href="/editar/{{aluno.id}}" class="action-edit">Editar</a>
+                        <a href="/deletar/{{aluno.id}}" class="action-delete" onclick="return confirmarDelecao(event, '{{aluno.nome}}')">Deletar</a>
+                    </td>
                 </tr>
             % end
         </tbody>
     </table>
-    <br>
-    <a href="/helper">Voltar para o Menu Principal</a>
+    
+    <a href="/helper" class="btn-voltar">Voltar para o Menu Principal</a>
+
+    <script src="/static/js/interactions.js"></script>
 </body>
 </html>

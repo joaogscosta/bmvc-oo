@@ -1,4 +1,4 @@
 class UserAdm:
-    def __init__(self, user, password):
-        self.user = user
+    def __init__(self, username, password):
+        self.username = username
         self.password = password

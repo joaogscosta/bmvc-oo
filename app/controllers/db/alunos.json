@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "nome": "Jo\u00e3o",
+        "nota1": 8.5,
+        "nota2": 9.0
+    },
+    {
+        "id": 2,
+        "nome": "Maria",
+        "nota1": 7.0,
+        "nota2": 6.5
+    },
+    {
+        "id": 3,
+        "nome": "Carlos",
+        "nota1": 4.0,
+        "nota2": 5.5
+    },
+    {
+        "id": 4,
+        "nome": "Maria",
+        "nota1": 6.0,
+        "nota2": 6.0
+    }
+]

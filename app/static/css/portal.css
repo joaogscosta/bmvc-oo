@@ -1,0 +1,99 @@
+/* ==========================================================================
+   ESTILIZAÇÃO DA TELA DE LOGIN (PORTAL)
+   ========================================================================== */
+
+/* Centraliza o card de login na tela */
+.login-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* Ocupa quase a tela inteira para centralizar na vertical */
+    background-color: #f4f6f9;
+}
+
+.login-container {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 340px; /* Mantém o tamanho ideal para o card */
+    border-top: 5px solid #34495e; /* Linha com o cinza escuro do cabeçalho da sua tabela */
+    box-sizing: border-box;
+}
+
+.login-container h1 {
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 26px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.login-container p {
+    margin-bottom: 18px;
+}
+
+.login-container label {
+    font-weight: bold;
+    color: #4a5568;
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 6px;
+}
+
+/* Estilização dos campos de texto e senha */
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    font-size: 15px;
+    box-sizing: border-box;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Foco interativo ao clicar nos campos */
+.login-container input:focus {
+    border-color: #34495e;
+    box-shadow: 0 0 5px rgba(52, 73, 94, 0.2);
+    outline: none;
+}
+
+/* Botão de Entrar (Login) */
+.btn-login {
+    width: 100%; /* Botão ocupa a largura total do card */
+    background-color: #34495e;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 10px;
+}
+
+.btn-login:hover {
+    background-color: #2c3e50;
+}
+
+/* Link de voltar centralizado */
+.login-back-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #7f8c8d;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.login-back-link:hover {
+    color: #95a5a6;
+    text-decoration: underline;
+}
